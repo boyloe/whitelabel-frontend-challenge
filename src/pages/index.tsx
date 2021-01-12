@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Hero from "../components/Hero"
 
 const IndexPage = () => (
-  <div className="h-screen bg-hero"> 
+  <div className="h-screen"> 
     <Hero />
   </div>
 )

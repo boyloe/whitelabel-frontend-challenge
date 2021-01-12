@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 
 const Hero:React.FC = () => {
     return (
-        <div className="h-screen flex flex-col">
+        <div className="h-screen bg-byrd flex flex-col">
             <div className="container mx-auto flex flex-row items-center py-8">
                 <nav className="w-1/3 flex justify-start">
                     <Link className="mx-8 font-Archivo tracking-wider" to="/store">STORE</Link>

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     backgroundColor: theme => ({
       ...theme('colors'),
-      'hero': '#F4F1ED'
+      'byrd': '#F4F1ED'
     }),
     extend: {
       fontFamily: {
