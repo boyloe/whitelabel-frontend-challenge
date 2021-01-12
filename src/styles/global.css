@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: 'Archivo';
+    src: url(../assets/Fonts/Archivo-Regular.ttf);
+}
+@font-face {
+    font-family: 'Archivo-Italic';
+    src: url(../assets/Fonts/Archivo-italic.ttf);
+}
+@font-face {
+    font-family: 'Archivo-Medium';
+    src: url(../assets/Fonts/Archivo-Medium.ttf);
+}
+@font-face {
+    font-family: 'Archivo-Medium-Italic';
+    src: url(../assets/Fonts/Archivo-MediumItalic.ttf);
+}
+@font-face {
+    font-family: 'Archivo-Semibold';
+    src: url(../assets/Fonts/Archivo-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Archivo-Semibold-Italic';
+    src: url(../assets/Fonts/Archivo-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Archivo-Bold';
+    src: url(../assets/Fonts/Archivo-Bold.ttf);
+}
+@font-face {
+    font-family: 'Archivo-Bold-Italic';
+    src: url(../assets/Fonts/Archivo-BoldItalic.ttf);
+}
+@tailwind utilities;
