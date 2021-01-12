@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     backgroundColor: theme => ({
       ...theme('colors'),
-      'byrd': '#F4F1ED'
+      'byrd': '#F4F1ED',
+      'byrd-button': '#EE5F20'
     }),
     extend: {
       fontFamily: {
@@ -20,6 +21,9 @@ module.exports = {
       textColor: {
         'splash':'#FFFFFF',
         'caption': '#31211B'
+      },
+      borderColor: {
+        "byrd": "#979797"
       }
       
     },
