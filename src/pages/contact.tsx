@@ -1,6 +1,8 @@
 import React from 'react';
-import Logo from '../assets/Images/Logo.png'
-import FBIcon from '../assets/Images/fb-transparent.png'
+import Logo from '../assets/Images/Logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 
 const Contact:React.FC = () => {
@@ -8,8 +10,8 @@ const Contact:React.FC = () => {
         <div className="h-screen w-full flex justify-center bg-byrd">        
             <div className="container mx-auto flex flex-row items-center py-8">
                 <div className="w-1/3 flex justify-start">
-                    <i className="mx-8"/>
-                    <i className="mx-8" />
+                    <FontAwesomeIcon className="opacity-10"icon={faFacebookSquare} />
+                    <FontAwesomeIcon className="opacity-10"icon={faTwitter} />
                 </div>
                 <div className="w-1/3">
                     <img className="transform scale-50 mt-6 "src={Logo} alt="Byrd MR"></img>
