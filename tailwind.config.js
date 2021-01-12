@@ -17,6 +17,9 @@ module.exports = {
         "Archivo-bold": ['Archivo-Bold', 'Helvetica', 'Arial', 'sans-serif'],
         "Archivo-bold-italic": ['Archivo-Bold-Italic', 'Helvetica', 'Arial', 'sans-serif'],
       }, 
+      textColor: {
+        'splash':'#FFFFFF'
+      }
       
     },
   },
