@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Formik, Form, Field, FormikHelpers } from 'formik'
+import { Link } from 'gatsby'
 
 interface formValues {
     fullName:string,
@@ -21,7 +22,9 @@ const Contact:React.FC = () => {
                     <FontAwesomeIcon className="opacity-20"icon={faTwitter} />
                 </div>
                 <div className="w-1/3">
-                    <img className="transform scale-50 -translate-y-4"src={Logo} alt="Byrd MR"></img>
+                    <Link to="/">
+                        <img className="transform scale-50 -translate-y-4"src={Logo} alt="Byrd MR"></img>
+                    </Link>
                 </div>
                 <div className="w-1/3 flex justify-end">
                     <img src={MenuIcon} alt="menu" />
