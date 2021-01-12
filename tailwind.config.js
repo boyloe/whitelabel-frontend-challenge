@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     backgroundColor: theme => ({
       ...theme('colors'),
-      'hero': '#f4f1ed'
+      'hero': '#F4F1ED'
     }),
     extend: {
       fontFamily: {
@@ -18,7 +18,8 @@ module.exports = {
         "Archivo-bold-italic": ['Archivo-Bold-Italic', 'Helvetica', 'Arial', 'sans-serif'],
       }, 
       textColor: {
-        'splash':'#FFFFFF'
+        'splash':'#FFFFFF',
+        'caption': '#31211B'
       }
       
     },

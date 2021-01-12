@@ -7,22 +7,30 @@ import { Link } from 'gatsby'
 
 const Hero:React.FC = () => {
     return (
-        <div className="h-screen flex flex-col bg-hero">
-            <div className="mx-auto flex flex-row items-center">
-                <nav className="w-1/4">
-                    <Link to="/store">Store</Link>
-                    <Link to="/tutorials">Tutorials</Link>
+        <div className="h-screen flex flex-col">
+            <div className="container mx-auto flex flex-row items-center py-8">
+                <nav className="w-1/3 flex justify-start">
+                    <Link className="mx-8 font-Archivo tracking-wider" to="/store">STORE</Link>
+                    <Link className="mx-8 font-Archivo tracking-wider"to="/tutorials">TUTORIALS</Link>
                 </nav>
-                <img className="transform scale-50"src={Logo} alt="Byrd MR"></img>
-                <nav className="w-1/4">
-                    <Link to="/blog">Blog</Link>
-                    <Link to="/contact">Contact</Link>
+                <div className="w-1/3">
+                    <img className="transform scale-50 mt-6 "src={Logo} alt="Byrd MR"></img>
+                </div>
+                <nav className="w-1/3 flex justify-end">
+                    <Link className="mx-8 font-Archivo tracking-wider" to="/blog">BLOG</Link>
+                    <Link className="mx-8 font-Archivo tracking-wider" to="/contact">CONTACT</Link>
                 </nav>
             </div>
-            <body className="mx-auto flex flex-col justify-between">
+            <body className="h-screen mx-auto my-4 flex flex-col justify-between">
                 <div className="flex flex-col justify-center">
-                    <img className="" src={Drone} alt="F-210 drone" /> 
-                    <img className="" src={ModelName} alt="F-210" />
+                    <img className="transform scale-y-110 scale-x-75 z-10" src={Drone} alt="F-210 drone" /> 
+                    <img className="transform scale-125 -translate-y-3 z-0" src={ModelName} alt="F-210" />
+                </div>
+                <div className="flex justify-center flex-col xl:mb-24">
+                    <q className="mx-auto font-Archivo text-caption opacity-25 text-xl tracking-wider">
+                        THE FASTEST DRONE ON THE PLANET
+                    </q>
+                    <p className="mx-auto font-Archivo text-caption opacity-25">"The- The Wirecutter</p>
                 </div>
             </body>            
         </div>
