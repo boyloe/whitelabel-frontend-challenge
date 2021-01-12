@@ -38,7 +38,15 @@ const Contact:React.FC = () => {
                         values:formValues,
                         { resetForm }:FormikHelpers<formValues>
                         )=> {
-                            //fetch call to a form spree or backend...
+                            fetch("https://www.madeupurl.com",{
+                            method: "POST",
+                            headers: {
+                                "Accept" : "Application/json</body>"
+                            },
+                            body: JSON.stringify(values)
+                        })
+                        resetForm()
+                        
                         }}
                 >       
                     <Form className="flex flex-col space-y-8 w-full">
