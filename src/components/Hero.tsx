@@ -26,7 +26,7 @@ const Hero:React.FC = () => {
                     <img className="transform scale-y-110 scale-x-75 z-10" src={Drone} alt="F-210 drone" /> 
                     <img className="transform scale-125 -translate-y-3 z-0" src={ModelName} alt="F-210" />
                 </div>
-                <div className="flex justify-center flex-col xl:mb-24">
+                <div className="flex justify-center flex-col 2xl:mt-0 2xl:mb-36">
                     <q className="mx-auto font-Archivo text-caption opacity-25 text-xl tracking-wider">
                         THE FASTEST DRONE ON THE PLANET
                     </q>
