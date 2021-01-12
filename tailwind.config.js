@@ -2,6 +2,10 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'hero': '#f4f1ed'
+    }),
     extend: {
       fontFamily: {
         "Archivo": ['Archivo', 'Helvetica', 'Arial', 'sans-serif'],
@@ -12,7 +16,8 @@ module.exports = {
         "Archivo-semibold-italic": ['Archivo-Semibold-Italic', 'Helvetica', 'Arial', 'sans-serif'],
         "Archivo-bold": ['Archivo-Bold', 'Helvetica', 'Arial', 'sans-serif'],
         "Archivo-bold-italic": ['Archivo-Bold-Italic', 'Helvetica', 'Arial', 'sans-serif'],
-      },      
+      }, 
+      
     },
   },
   variants: {
