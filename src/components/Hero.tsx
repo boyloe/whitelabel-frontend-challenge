@@ -15,16 +15,16 @@ const Hero:React.FC = () => {
         <div className="h-screen bg-byrd flex flex-col ">
             <div className="container mx-auto flex flex-row items-center py-8 mb-8 lg:mb-0">
                 <nav className="w-1/3 flex justify-start">
-                        <Link className="hidden md:hidden-none mx-8 font-Archivo tracking-wider" to="/store">STORE</Link>
-                        <Link className="hidden md:hidden-none mx-8 font-Archivo tracking-wider"to="/tutorials">TUTORIALS</Link>
+                        <Link className="invisible md:visible mx-8 font-Archivo tracking-wider" to="/store">STORE</Link>
+                        <Link className="invisible md:visible mx-8 font-Archivo tracking-wider"to="/tutorials">TUTORIALS</Link>
                 </nav>                
                 <div className="w-1/3">
                     <img className="transform md:scale-50 lg:mt-6 "src={Logo} alt="Byrd MR"></img>
                 </div>
                 <nav className="w-1/3 flex justify-end">
-                    <Link className="hidden md:hidden-none x-8 font-Archivo tracking-wider" to="/blog">BLOG</Link>
-                    <Link className="hidden md:hidden-none mx-8 font-Archivo tracking-wider" to="/contact">CONTACT</Link>
-                    <img className="md:hidden mr-6" src={Menu} alt="navigaition menu" />
+                    <Link className="invisible md:visibile mx-8 font-Archivo tracking-wider" to="/blog">BLOG</Link>
+                    <Link className="invisible md:visibile mx-8 font-Archivo tracking-wider" to="/contact">CONTACT</Link>
+                    <img className="md:hidden mr-6 transform scale-75" src={Menu} alt="navigaition menu" />
                 </nav>
             </div>
             <div className=" mx-auto lg:my-4 flex flex-col justify-between">
