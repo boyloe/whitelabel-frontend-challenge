@@ -30,7 +30,7 @@ const Contact:React.FC = () => {
                     <img src={MenuIcon} alt="menu" />
                 </div>
             </div>
-            <div className="h-screen w-full px-12 lg:w-1/3 mx-auto my-12 flex flex-col justify-between">
+            <div className="h-screen w-full px-8 lg:w-1/3 mx-auto my-12 flex flex-col justify-between">
                 <Formik 
                     initialValues={{
                         fullName: "",
@@ -52,7 +52,7 @@ const Contact:React.FC = () => {
                         
                         }}
                 >       
-                    <Form className="flex flex-col md:mt-12 md:space-y-14 lg:space-y-8 w-full">
+                    <Form className="flex flex-col md:mt-12 space-y-8 md:space-y-14 lg:space-y-8 w-full">
                         <label className="font-Archivo-md uppercase tracking-wider" htmlFor="fullName">Full Name</label>
                         <Field
                             className="bg-byrd border-b border-byrd"
@@ -65,7 +65,7 @@ const Contact:React.FC = () => {
                             id="email"
                             name="email"
                         />
-                        <label className="font-Archivo-md uppercase tracking-wider mb-12" htmlFor="messgae">Message</label>
+                        <label className="font-Archivo-md uppercase tracking-wider" htmlFor="messgae">Message</label>
                         <Field
                             className="bg-byrd border-b border-byrd"
                             id="message"
