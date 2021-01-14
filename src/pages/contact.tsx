@@ -52,27 +52,27 @@ const Contact:React.FC = () => {
                         
                         }}
                 >       
-                    <Form className="flex flex-col space-y-8 w-full">
-                        <label className="font-Archivo-md" htmlFor="fullName">Full Name</label>
+                    <Form className="flex flex-col md:mt-12 md:space-y-14 lg:space-y-8 w-full">
+                        <label className="font-Archivo-md uppercase tracking-wider" htmlFor="fullName">Full Name</label>
                         <Field
                             className="bg-byrd border-b border-byrd"
                             id="fullName"
                             name="fullName"
                         />
-                        <label className="font-Archivo-md" htmlFor="email">Email</label>
+                        <label className="font-Archivo-md uppercase tracking-wider" htmlFor="email">Email</label>
                         <Field
                             className="bg-byrd border-b border-byrd"
                             id="email"
                             name="email"
                         />
-                        <label className="font-Archivo-md" htmlFor="messgae">Message</label>
+                        <label className="font-Archivo-md uppercase tracking-wider mb-12" htmlFor="messgae">Message</label>
                         <Field
                             className="bg-byrd border-b border-byrd"
                             id="message"
                             name="message"
                             component="textarea"
                         />
-                        <button className="w-full md:w-1/2 bg-byrd-button flex justify-end py-6 rounded-sm" type="submit">
+                        <button className="w-full md:w-1/3 lg:w-1/2 bg-byrd-button flex justify-end py-6 rounded-sm" type="submit">
                             <FontAwesomeIcon className="text-white mr-8" icon={faArrowRight} />
                         </button>
                     </Form>
