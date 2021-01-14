@@ -27,7 +27,7 @@ const Hero:React.FC = () => {
                     <img className="lg:hidden mr-6 md:mr-24 transform scale-75" src={Menu} alt="navigaition menu" />
                 </nav>
             </div>
-            <div className=" mx-auto sm:mt-16 lg:my-4 flex flex-col justify-between sm:space-y-24">
+            <div className=" mx-auto sm:mt-16 lg:my-4 flex flex-col justify-between sm:space-y-24 md:space-y-4 2xl:space-y-14">
                 <div className="flex flex-col justify-center space-y-14 md:space-y-0">
                     <img className="transform scale-110 md:scale-y-110 md:scale-x-75 z-10" src={Drone} alt="F-210 drone" /> 
                     <img className="transform scale-75 lg:scale-125 lg:-translate-y-3 z-0" src={ModelName} alt="F-210" />
