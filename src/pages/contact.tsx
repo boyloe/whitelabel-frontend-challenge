@@ -18,19 +18,19 @@ const Contact:React.FC = () => {
         <div className="h-screen w-full flex flex-col justify-between bg-byrd">
             <div className="container mx-auto py-12 flex items-start">
                 <div className="w-1/3 flex justify-start space-x-12">
-                    <FontAwesomeIcon className="opacity-20"icon={faFacebookSquare} />
-                    <FontAwesomeIcon className="opacity-20"icon={faTwitter} />
+                    <FontAwesomeIcon className="invisible lg:visible opacity-20"icon={faFacebookSquare} />
+                    <FontAwesomeIcon className="invisible lg:visible opacity-20"icon={faTwitter} />
                 </div>
                 <div className="w-1/3">
                     <Link to="/">
-                        <img className="transform scale-50 -translate-y-4"src={Logo} alt="Byrd MR"></img>
+                        <img className=" md:transform scale-50 -translate-y-4"src={Logo} alt="Byrd MR"></img>
                     </Link>
                 </div>
-                <div className="w-1/3 flex justify-end">
+                <div className="mr-6 lg:mr-0 w-1/3 flex justify-end">
                     <img src={MenuIcon} alt="menu" />
                 </div>
             </div>
-            <body className="h-screen w-1/3 mx-auto my-12 flex flex-col justify-between">
+            <div className="h-screen w-full px-8 lg:w-1/3 mx-auto my-12 flex flex-col justify-between">
                 <Formik 
                     initialValues={{
                         fullName: "",
@@ -52,32 +52,32 @@ const Contact:React.FC = () => {
                         
                         }}
                 >       
-                    <Form className="flex flex-col space-y-8 w-full">
-                        <label className="font-Archivo-md" htmlFor="fullName">Full Name</label>
+                    <Form className="flex flex-col md:mt-12 space-y-8 md:space-y-14 lg:space-y-8 w-full">
+                        <label className="font-Archivo-md uppercase tracking-wider" htmlFor="fullName">Full Name</label>
                         <Field
                             className="bg-byrd border-b border-byrd"
                             id="fullName"
                             name="fullName"
                         />
-                        <label className="font-Archivo-md" htmlFor="email">Email</label>
+                        <label className="font-Archivo-md uppercase tracking-wider" htmlFor="email">Email</label>
                         <Field
                             className="bg-byrd border-b border-byrd"
                             id="email"
                             name="email"
                         />
-                        <label className="font-Archivo-md" htmlFor="messgae">Message</label>
+                        <label className="font-Archivo-md uppercase tracking-wider" htmlFor="messgae">Message</label>
                         <Field
                             className="bg-byrd border-b border-byrd"
                             id="message"
                             name="message"
                             component="textarea"
                         />
-                        <button className="w-1/2 bg-byrd-button flex justify-end py-6 rounded-sm" type="submit">
+                        <button className="w-full md:w-1/3 lg:w-1/2 bg-byrd-button flex justify-end py-6 rounded-sm" type="submit">
                             <FontAwesomeIcon className="text-white mr-8" icon={faArrowRight} />
                         </button>
                     </Form>
                 </Formik>
-            </body>
+            </div>
         </div>
     )
 }
